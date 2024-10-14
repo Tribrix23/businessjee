@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: kenshie;
+    src: url(SnowBlue-OVVwd.otf);
+}
+body{
+    background-color: white;
+}
+.header h2::after{
+content: "S";
+color:red;
+}
+.header h2:before{
+    content: "Z";
+    color: red;
+}
+@font-face {
+    font-family: shun;
+    src: url(AestheticRomanceRegular-0WRmG.ttf);
+}
+.header{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 25px 25px;
+}
+.header h2{
+    font-size: 100px;
+    text-shadow: 0px 25px 25px black;
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
+    width: auto;
+    font-family: kenshie;
+    color: white;
+    cursor:url('cursor.cur'), auto;
+}
+.header p{
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 10px black;
+    font-family:shun;
+    font-style: italic;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    background-color: whitesmoke;
+    margin-top: 30px;
+    padding: auto auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    margin-left: 20px;
+    /*border: 0.1px solid black;*/
+    box-shadow: 0px 0px 20px black;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    border-radius:5%;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 78px;
+}
+.product img{
+    width: 260px;
+    height: 250px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.details,
+.desc{
+    margin-left: 20px;
+    line-height: 1.3;
+    font-weight: 14px;
+    width: auto;
+    font-style: italic;
+}
+.desc{
+    border-bottom: 2px solid black;
+}
+.jee{
+    margin-top: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+}
+.details a{
+    color: black;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+.price,
+.prices{
+    font-size: 20px;
+    font-weight: bold;
+}
+.price{
+    color:red;
+    margin-bottom: 10px;
+}
+.prices{
+    margin-top: 10px;
+    color: black;
+}
+
+.details a:hover{
+    border-bottom: 2px dotted green;
+    color: green;
+    transition: 1s;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0px 50px 70px green;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    cursor:url('cursor.cur'), auto;
+}
+
+
