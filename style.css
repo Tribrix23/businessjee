@@ -44,14 +44,14 @@ color:red;
     animation: anim 10s infinite;
 }
 .header p{
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 30px;
     font-weight: bold;
     color: white;
     border-bottom: 3px solid white;
     padding-bottom: 10px;
     text-transform: uppercase;
-    text-shadow: 0px 2px 10px black;
+    text-shadow: 0px 10px 10px white;
     font-family:shun;
     font-style: italic;
 }
@@ -118,6 +118,7 @@ color:red;
     margin-bottom: 10px;
     text-decoration: none;
     border-bottom: 2px solid black;
+    transition: 1s;
 }
 
 .price,
@@ -162,4 +163,33 @@ color:red;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: black;
+    width: auto;
+    height: 150px;
+    margin-top: 22px;
+    color: white;
+}
+footer a{
+    color: gray;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: auto;
+    padding: 10px 10px;
+    gap: 12%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 1s;
+}
+footer a:hover{
+text-decoration: underline;
+transition: 1s;
+text-shadow: 5px 9px 5px white;
 }
