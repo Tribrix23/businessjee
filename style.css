@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: kenshie;
-    src: url(fonts/SnowBlue-OVVwd.otf);
+    src: url(fonts/Exquisite-Gprq.otf);
 }
 body{
     background-color: white;
@@ -24,7 +24,7 @@ color:red;
     src: url(fonts/AestheticRomanceRegular-0WRmG.ttf);
 }
 .header{
-    background-color: gray;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,17 +33,18 @@ color:red;
     padding: 25px 25px;
 }
 .header h2{
-    font-size: 100px;
-    text-shadow: 0px 25px 25px black;
+    font-size: 150px;
+    text-shadow: 0px 20px 25px gold;
     -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
     width: auto;
     font-family: kenshie;
     color: white;
     cursor:url('cursor.cur'), auto;
+    animation: anim 10s infinite;
 }
 .header p{
-    margin-top: 5px;
+    margin-top: 10px;
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -144,3 +145,20 @@ color:red;
     cursor:url('cursor.cur'), auto;
 }
 
+@keyframes anim {
+    100%{text-shadow: 0px 12px 20px yellow;}
+    30%{text-shadow: 0px 30px 20px gold;}
+    40%{text-shadow: 0px 5px 20px yellow;}
+    50%{text-shadow: 0px 5px 20px gold;}
+    60%{text-shadow: 0px 5px 20px yellow;}
+    70%{text-shadow: 0px 5px 20px gold;}
+    80%{text-shadow: 0px 25px 20px yellow;}
+    90%{text-shadow: 0px 5px 20px gold;}
+    100%{text-shadow: 0px 20px 20px yellow;}
+}
+
+.boxer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
