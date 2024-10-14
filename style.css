@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: kenshie;
-    src: url(SnowBlue-OVVwd.otf);
+    src: url(fonts/SnowBlue-OVVwd.otf);
 }
 body{
     background-color: white;
@@ -21,7 +21,7 @@ color:red;
 }
 @font-face {
     font-family: shun;
-    src: url(AestheticRomanceRegular-0WRmG.ttf);
+    src: url(fonts/AestheticRomanceRegular-0WRmG.ttf);
 }
 .header{
     background-color: gray;
