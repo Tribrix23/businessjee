@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+     
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            position: relative;
+            overflow: hidden;
+        }
+
+       
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('imgs/b.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            z-index: 1;
+            width: 90%;
+            max-width: 210px; 
+            margin: 10px; 
+            background-image: url(imgs/b.jpg);
+            background-size: cover;
+            background-position: center;
+            opacity: 20px;
+            box-shadow: 3px 3px 3px rgba(15, 15, 15, 0.45)
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        
+        .bod {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .logL, .passL {
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 90%; 
+            box-sizing: border-box; 
+            justify-content: center;
+            align-self: center;
+        }
+
+ 
+        button {
+            padding: 5px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+       
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+
+            .logL, .passL {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            button {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 20px;
+            }
+
+            .logL, .passL {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+            button {
+                padding: 6px;
+                font-size: 12px;
+            }
+        }
+        
+        @media only screen and (max-width: 360px) {
+           .container {
+               padding: 10px;
+           }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .logL, .passL {
+                font-size: 12px;
+                padding: 6px;
+            }
+
+              button {
+               padding: 8px;
+               font-size: 12px;
+                }
+       }
+
+       @media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .logL, .passL {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .logL, .passL {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .logL, .passL {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h2>Login</h2>
+        <form class="bod" method="POST" action="/login">
+            <input type="email" class="logL" placeholder="Username" required>
+            <input type="password" class="passL" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
